@@ -6,3 +6,5 @@ stuff 2
 #### and smaller 4
 ##### and smaller 5
 ###### smallest 6
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
