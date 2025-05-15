@@ -8,3 +8,18 @@ stuff 2
 ###### smallest 6
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+``` cpp
+void processSerialCommands() {
+  if(Serial.available() > 0) {
+    char readChar = Serial.read();
+    if (readChar >= 42 && readChar <= 122) {                    // ignore if not between '*' and 'z' in ASCII table 
+      readChar = toupper(readChar);                             // convert lower case characters to upper case
+      switch(readChar){
+        case 'V': if (VERBOSE)  {VERBOSE  = false; Serial << F("\nVERBOSE - off\n\n") ;}
+                  else          {VERBOSE  = true;  Serial << F("\nVERBOSE - ON\n")    ;} break;
+        } 
+      } 
+    } 
+  }
+```
