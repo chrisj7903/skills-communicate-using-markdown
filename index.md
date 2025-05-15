@@ -23,3 +23,8 @@ void processSerialCommands() {
     } 
   }
 ```
+
+- [x] item 1 is checked
+- [ ] item 2 is not
+- [ ] nor is item 3 
+- [x] item 4 is checked  
